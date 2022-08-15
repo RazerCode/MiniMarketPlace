@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    animation: color-wave 30s infinite;
+    background-size: cover;
+}
+
+@keyframes color-wave {
+    0% {
+        background-image: url("discord2.jpg");
+    }
+
+    25% {
+        background-image: url("manzara2.jpg");
+    }
+
+    50% {
+        background-image: url("manzara3.jpg");
+    }
+
+    75% {
+        background-image: url("manzara4.jpg");
+    }
+
+    100% {
+        background-image: url("discord2.jpg");
+    }
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* header start */
+header{
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.04);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo a{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+    color: gray;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+nav .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+nav .menu .dcbuton{
+    font-weight: 700;
+    font-size: 20px;
+    color: #00FF2A;
+    text-decoration: none;
+    background-color: rgba(0,255,0,0.08);
+    padding: 12px 24px;
+    border-radius: 56px;
+}
+
+nav .menu .dcbuton:hover{
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.08);
+    transition: 1.25s ease;
+}
+
+section p{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+/* header end */
+
+/* responsive start */
+@media(max-width:576px){
+    .container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .menu .dcbuton{
+        display: none;
+    }
+}
+/* responsive end */
+
+.urun .containers{
+    background-color: black;
+    opacity: 60%;
+    width: 25%;
+    margin: auto;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.urun{
+    display: flex;
+    column-gap: 30px;
+    margin: auto;
+}
+
+.containers .pp{
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.containers .ppp{
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.containers .link{
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 150px;
+    font-size: 30px;
+    border-radius: 30px;
+}
+
+.containers .link:hover{
+    transition: .25s;
+    background-color: rgba(100, 100, 100, 1);
+    color: black;
+}
+
+@media(max-width:585px){
+    .urun{
+        display: list-item;
+        column-gap: 30px;
+        margin: auto;
+    }
+}
+
+.gec{
+    position: absolute;
+    font-weight: 700;
+    margin-top: 25px;
+    right: 20px;
+    animation: color-waves 4s infinite;
+}
+
+.gec:hover{
+    color: white;
+    transition: .25s;
+    color: white;
+    animation: color-waves step-end;
+}
+
+@keyframes color-waves {
+    0% {
+        color: #00FF2A;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: red;
+    }
+
+    75% {
+        color: blue;
+    }
+
+    100% {
+        color: #00FF2A;
+    }
+}
